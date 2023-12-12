@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5109BCF2B28B2AD0054508C /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5109BCE2B28B2AD0054508C /* BannerCollectionViewCell.swift */; };
+		A5109BD22B28B3D20054508C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A5109BD12B28B3D20054508C /* SnapKit */; };
+		A5109BD42B28B3D20054508C /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = A5109BD32B28B3D20054508C /* SnapKit-Dynamic */; };
+		A5109BD72B28CBEC0054508C /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A5109BD62B28CBEC0054508C /* Kingfisher */; };
 		A52C73D72B28AF4700D612A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52C73D62B28AF4700D612A3 /* AppDelegate.swift */; };
 		A52C73D92B28AF4700D612A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52C73D82B28AF4700D612A3 /* SceneDelegate.swift */; };
 		A52C73DB2B28AF4700D612A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52C73DA2B28AF4700D612A3 /* ViewController.swift */; };
 		A52C73DE2B28AF4700D612A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A52C73DC2B28AF4700D612A3 /* Main.storyboard */; };
 		A52C73E02B28AF4900D612A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A52C73DF2B28AF4900D612A3 /* Assets.xcassets */; };
 		A52C73E32B28AF4900D612A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A52C73E12B28AF4900D612A3 /* LaunchScreen.storyboard */; };
+		A52C73EB2B28B22300D612A3 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52C73EA2B28B22300D612A3 /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A5109BCE2B28B2AD0054508C /* BannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCollectionViewCell.swift; sourceTree = "<group>"; };
 		A52C73D32B28AF4700D612A3 /* BasicCompositionalLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicCompositionalLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A52C73D62B28AF4700D612A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A52C73D82B28AF4700D612A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,7 @@
 		A52C73DF2B28AF4900D612A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A52C73E22B28AF4900D612A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A52C73E42B28AF4900D612A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A52C73EA2B28B22300D612A3 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5109BD72B28CBEC0054508C /* Kingfisher in Frameworks */,
+				A5109BD22B28B3D20054508C /* SnapKit in Frameworks */,
+				A5109BD42B28B3D20054508C /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,7 +68,9 @@
 			children = (
 				A52C73D62B28AF4700D612A3 /* AppDelegate.swift */,
 				A52C73D82B28AF4700D612A3 /* SceneDelegate.swift */,
+				A52C73EA2B28B22300D612A3 /* Item.swift */,
 				A52C73DA2B28AF4700D612A3 /* ViewController.swift */,
+				A5109BCE2B28B2AD0054508C /* BannerCollectionViewCell.swift */,
 				A52C73DC2B28AF4700D612A3 /* Main.storyboard */,
 				A52C73DF2B28AF4900D612A3 /* Assets.xcassets */,
 				A52C73E12B28AF4900D612A3 /* LaunchScreen.storyboard */,
@@ -83,6 +95,11 @@
 			dependencies = (
 			);
 			name = BasicCompositionalLayout;
+			packageProductDependencies = (
+				A5109BD12B28B3D20054508C /* SnapKit */,
+				A5109BD32B28B3D20054508C /* SnapKit-Dynamic */,
+				A5109BD62B28CBEC0054508C /* Kingfisher */,
+			);
 			productName = BasicCompositionalLayout;
 			productReference = A52C73D32B28AF4700D612A3 /* BasicCompositionalLayout.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +128,10 @@
 				Base,
 			);
 			mainGroup = A52C73CA2B28AF4700D612A3;
+			packageReferences = (
+				A5109BD02B28B3D20054508C /* XCRemoteSwiftPackageReference "SnapKit" */,
+				A5109BD52B28CBEC0054508C /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = A52C73D42B28AF4700D612A3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +159,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5109BCF2B28B2AD0054508C /* BannerCollectionViewCell.swift in Sources */,
+				A52C73EB2B28B22300D612A3 /* Item.swift in Sources */,
 				A52C73DB2B28AF4700D612A3 /* ViewController.swift in Sources */,
 				A52C73D72B28AF4700D612A3 /* AppDelegate.swift in Sources */,
 				A52C73D92B28AF4700D612A3 /* SceneDelegate.swift in Sources */,
@@ -363,6 +386,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A5109BD02B28B3D20054508C /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		A5109BD52B28CBEC0054508C /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 7.6.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A5109BD12B28B3D20054508C /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A5109BD02B28B3D20054508C /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		A5109BD32B28B3D20054508C /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A5109BD02B28B3D20054508C /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+		A5109BD62B28CBEC0054508C /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A5109BD52B28CBEC0054508C /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A52C73CB2B28AF4700D612A3 /* Project object */;
 }
